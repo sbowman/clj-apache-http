@@ -428,7 +428,7 @@
            (or (.getScheme u) "http")
            (.getHost u)
            (.getPort u)
-           (.getPath u)
+           (.getRawPath u)
            (combine-query
              (.getQuery u)
              (encode-query query-parameters))
