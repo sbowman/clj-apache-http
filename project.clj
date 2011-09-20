@@ -1,7 +1,7 @@
-(defproject com.twinql.clojure/clj-apache-http "2.3.1"
- :description "Clojure HTTP library using the Apache HttpClient."
- :dev-dependencies [[leiningen/lein-swank "1.1.0"]]
- :dependencies [[org.clojure/clojure "1.2.0"]
+(defproject org.clojars.sbowman/clj-apache-http "2.3.1"
+ :description "Clojure HTTP library using the Apache HttpClient.  Fix bug with escaped characters in URLs."
+ :dev-dependencies [[lein-clojars "0.7.0"]]
+ :dependencies [[org.clojure/clojure "1.2.1"]
                 [org.clojure/clojure-contrib "1.2.0"]
                 [org.apache.httpcomponents/httpcore "4.0.1"]
                 [org.apache.httpcomponents/httpmime "4.0.1"]
