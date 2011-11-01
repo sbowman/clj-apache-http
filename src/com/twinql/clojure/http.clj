@@ -91,13 +91,10 @@
   [q]
   (mapcat
     (fn [[param value]]
-      (if (and (sequential? value)
-               (not (empty? value)))
-        (map (partial (fn [#^String p v]
-                        (new BasicNameValuePair p (as-str v)))
-                      (as-str param))
-             value)
-        [(new BasicNameValuePair (as-str param) (as-str value))]))
+      (if (sequential? value)
+        (when-not (empty? value)       
+          (map (partial (fn [#^String p v] (new BasicNameValuePair p (as-str v))) (as-str param)) value))
+        [(new BasicNameValuePair (as-str param) (as-str value))])))
        q))
 
 (defn encode-query [q]
