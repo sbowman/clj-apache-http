@@ -1,4 +1,4 @@
-(defproject org.clojars.sbowman/clj-apache-http "2.4.1"
+(defproject org.clojars.sbowman/clj-apache-http "2.4.2"
  :description "Clojure HTTP library using the Apache HttpClient.  Fix bug with escaped characters in URLs, and updated to Clojure 1.3 and HTTP 4.1.2/4.1.3."
  :dev-dependencies [[lein-clojars "0.7.0"]]
  :dependencies [[org.clojure/clojure "1.3.0"]
